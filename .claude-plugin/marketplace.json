@@ -1,0 +1,24 @@
+{
+  "name": "harris-laravel-tools",
+  "owner": {
+    "name": "Harris Raftopoulos"
+  },
+  "metadata": {
+    "description": "Laravel development tools for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "laravel-herd-worktree",
+      "source": ".",
+      "description": "Set up git worktrees for Laravel projects with Laravel Herd integration",
+      "version": "1.0.0",
+      "author": {
+        "name": "Harris Raftopoulos"
+      },
+      "license": "MIT",
+      "keywords": ["laravel", "herd", "worktree", "git", "development"],
+      "category": "development"
+    }
+  ]
+}
