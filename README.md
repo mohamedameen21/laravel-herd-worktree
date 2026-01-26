@@ -1,5 +1,9 @@
 # Laravel Herd Worktree
 
+<p align="center">
+  <img src="art/logo.png" alt="Laravel Herd Worktree" width="400">
+</p>
+
 A Claude Code skill that automates setting up git worktrees for Laravel projects served by Laravel Herd.
 
 ## What It Does
