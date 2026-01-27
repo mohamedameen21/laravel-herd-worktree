@@ -462,6 +462,19 @@ Before considering setup complete, verify:
 - [ ] `npm run dev` running from worktree directory
 - [ ] Site accessible at `http://$BRANCH_NAME.test` (no white page)
 
+## CRITICAL: Working Directory After Setup
+
+**After worktree setup is complete, ALL subsequent work MUST use the worktree path.**
+
+The worktree is a separate copy of the codebase. Using the main repo path will edit the wrong files.
+
+- **Worktree path:** `/path/to/project/.worktrees/$BRANCH_NAME/`
+- **All file reads, edits, and writes** must use the worktree absolute path (e.g., `/path/to/project/.worktrees/$BRANCH_NAME/app/...`)
+- **All Bash commands** (artisan, tests, pint, etc.) must run from the worktree directory
+- **All git operations** must run from the worktree directory
+
+**After setup, remind the user and any subsequent agents:** "All work for this task should use the worktree at `/path/to/project/.worktrees/$BRANCH_NAME/`. Do not modify files in the main project directory."
+
 ## Integration
 
 **Pairs with:**
